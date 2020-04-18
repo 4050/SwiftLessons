@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="secondProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="th8-dj-oXb" customClass="CurrencyTxtField" customModule="secondProject" customModuleProvider="target">
+                                <rect key="frame" x="116" y="200" width="182" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FvK-IT-1jy" customClass="CurrencyTxtField" customModule="secondProject" customModuleProvider="target">
+                                <rect key="frame" x="116" y="242" width="182" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypy-Su-Uqt">
+                                <rect key="frame" x="116" y="284" width="182" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hql-Ry-qQG">
+                                <rect key="frame" x="116" y="797" width="182" height="30"/>
+                                <state key="normal" title="Cleare Calculate">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="cleareCalculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bk2-3m-0cI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ypy-Su-Uqt" firstAttribute="width" secondItem="FvK-IT-1jy" secondAttribute="width" id="6oy-19-XJJ"/>
+                            <constraint firstItem="FvK-IT-1jy" firstAttribute="top" secondItem="th8-dj-oXb" secondAttribute="bottom" constant="8" id="8C1-fN-ZpN"/>
+                            <constraint firstItem="ypy-Su-Uqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="90e-Gf-fqi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="th8-dj-oXb" secondAttribute="trailing" constant="116" id="99s-se-fpm"/>
+                            <constraint firstItem="th8-dj-oXb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="9iu-qj-4Uh"/>
+                            <constraint firstItem="FvK-IT-1jy" firstAttribute="leading" secondItem="th8-dj-oXb" secondAttribute="leading" id="AMC-76-yvc"/>
+                            <constraint firstItem="FvK-IT-1jy" firstAttribute="width" secondItem="th8-dj-oXb" secondAttribute="width" id="CtD-XP-Zy8"/>
+                            <constraint firstItem="th8-dj-oXb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="156" id="EQw-tq-R75"/>
+                            <constraint firstItem="FvK-IT-1jy" firstAttribute="trailing" secondItem="th8-dj-oXb" secondAttribute="trailing" id="Ik8-bK-0dw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypy-Su-Uqt" secondAttribute="trailing" constant="116" id="PHX-OJ-WZR"/>
+                            <constraint firstItem="hql-Ry-qQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="RLO-xg-8lr"/>
+                            <constraint firstItem="ypy-Su-Uqt" firstAttribute="top" secondItem="FvK-IT-1jy" secondAttribute="bottom" constant="8" id="cEK-kM-M9e"/>
+                            <constraint firstItem="hql-Ry-qQG" firstAttribute="width" secondItem="ypy-Su-Uqt" secondAttribute="width" id="h4J-Al-Tgn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hql-Ry-qQG" secondAttribute="bottom" constant="35" id="ngL-Mj-FSv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hql-Ry-qQG" secondAttribute="trailing" constant="116" id="wqg-ha-OgD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cleareCalculateButton" destination="hql-Ry-qQG" id="OvW-lP-BWO"/>
+                        <outlet property="priceTxt" destination="FvK-IT-1jy" id="U3b-2f-7IP"/>
+                        <outlet property="resultLbl" destination="ypy-Su-Uqt" id="Wq7-s2-5vb"/>
+                        <outlet property="wageTxt" destination="th8-dj-oXb" id="3ue-GC-kyV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
